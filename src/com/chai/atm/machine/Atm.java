@@ -48,12 +48,14 @@ public class Atm {
 					System.out.println("Enter amount to withdraw: ");
 					float sum = sc.nextFloat();
 					a.withdraw(sum);
+					System.out.println("Account Balance is "+a.getAccBal());
 					ad.logTransaction(a.getAccID(), sum, "w");
 					break;
 				case 3:
 					System.out.println("Enter amount to deposit: ");
 					float sum1 = sc.nextFloat();
 					a.deposit(sum1);
+					System.out.println("Account Balance is "+a.getAccBal());
 					ad.logTransaction(a.getAccID(), sum1, "d");
 					break;
 				case 4:
