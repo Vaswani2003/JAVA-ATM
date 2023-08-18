@@ -69,6 +69,7 @@ public class Admin {
 	Admin(){
 		admin = new AccountAdmin();
 		accounts = admin.getAccounts();
+		System.out.println("Hi");
 	}
 
 }
